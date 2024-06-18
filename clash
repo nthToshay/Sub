@@ -1,0 +1,70 @@
+mixed-port: 8080
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 127.0.0.1:7874
+  nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  default-nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+
+proxies:
+  - name: KH
+    server: sg-4.test3.net
+    port: 443
+    type: trojan
+    password: 5a3c5fa0-74b4-11ee-85af-1239d0255272
+    sni: m.yuanzhanapp.com
+    skip-cert-verify: true
+
+  - name: TH 1
+    server: id-1.test3.net
+    port: 443
+    type: trojan
+    password: 5d7725a0-8308-11ee-97b9-1239d0255272
+    sni: m.yuanzhanapp.com
+    skip-cert-verify: true
+    
+proxy-groups:
+  - name: Jantit
+    type: select
+    proxies:
+      - FIRST PING
+      - BEST PING
+      - KH
+      - TH 1
+
+  - name: FIRST PING
+    type: fallback
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 60
+    proxies:
+      - KH
+      - TH 1
+      
+  - name: BEST PING
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 60
+    proxies:
+      - KH
+      - TH 1
+
+rules:
+- MATCH,Jantit
