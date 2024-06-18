@@ -25,42 +25,19 @@ dns:
     - 8.8.4.4
 
 proxies:
-- name: KH
-    server: 220.158.233.184
-    port: 10000
-    type: vmess
-    uuid: 195b8c90-2ac1-11ef-bbc1-ab0d80ea3208
-    alterId: 0
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /vpnjantit
-      headers:
-       Host: m.mobilelegends.com
-
-- name: TH 1
-    server: 185.78.165.153
-    port: 10000
-    type: vmess
-    uuid: 78ae7122-28cc-11ef-b806-00163ea61c9a
-    alterId: 0
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /vpnjantit
-      headers:
-       Host: m.mobilelegends.com
+  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 195b8c90-2ac1-11ef-bbc1-ab0d80ea3208, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 78ae7122-28cc-11ef-b806-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
     
 proxy-groups:
   - name: Jantit
     type: select
     proxies:
-      - FIRST PING
-      - BEST PING
+      - Auto
+      - Best Ping
       - KH
       - TH 1
 
-  - name: FIRST PING
+  - name: Auto
     type: fallback
     url: 'http://www.gstatic.com/generate_204'
     interval: 60
@@ -68,7 +45,7 @@ proxy-groups:
       - KH
       - TH 1
       
-  - name: BEST PING
+  - name: Best Ping
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 60
