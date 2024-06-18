@@ -25,8 +25,8 @@ dns:
     - 8.8.4.4
 
 proxies:
-  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 195b8c90-2ac1-11ef-bbc1-ab0d80ea3208, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
-  - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 78ae7122-28cc-11ef-b806-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 82208238-2bbd-11ef-9fd2-5b3043e3e411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 8f67776a-2967-11ef-bb27-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
     
 proxy-groups:
   - name: Jantit
