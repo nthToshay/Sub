@@ -25,7 +25,7 @@ dns:
     - 8.8.4.4
 
 proxies:
-  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 0c028f8a-2f9e-11ef-9010-477928b235e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 4901485a-3231-11ef-ae32-67c38d378d17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
   - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 8f23be62-313c-11ef-a456-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
 
   - name: SG HE-02
@@ -44,6 +44,7 @@ proxy-groups:
       - Best Ping
       - KH
       - TH 1
+      - SG HE-02
 
   - name: Auto
     type: fallback
@@ -52,7 +53,8 @@ proxy-groups:
     proxies:
       - KH
       - TH 1
-      
+      - SG HE-02
+
   - name: Best Ping
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -60,6 +62,7 @@ proxy-groups:
     proxies:
       - KH
       - TH 1
+      - SG HE-02
 
 rules:
 - MATCH,Jantit
