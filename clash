@@ -25,7 +25,7 @@ dns:
     - 8.8.4.4
 
 proxies:
-  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: a0b29154-3357-11ef-bef6-077407aaf08b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 2a26ed4e-35cf-11ef-9059-4b377203788d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
   - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 915bbef0-32a9-11ef-8a42-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
 
   - name: SG HE-02
