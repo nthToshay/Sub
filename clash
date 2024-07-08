@@ -25,8 +25,8 @@ dns:
     - 8.8.4.4
 
 proxies:
-  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 3dccb868-3932-11ef-be39-8bd9bbe32133, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
-  - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 70db0ad8-39c9-11ef-b554-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: KH, server: "220.158.233.184", port: 10000, type: vmess, uuid: 02e1454e-3d37-11ef-bb0c-93a268ce30a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
+  - {name: TH 1, server: "185.78.165.153", port: 10000, type: vmess, uuid: 57e9649a-3d37-11ef-a31a-00163ea61c9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: m.mobilelegends.com}}, udp: true}
 
   - name: SG HE-02
     server: sg2-trojan.bonds.id
