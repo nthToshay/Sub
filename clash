@@ -80,7 +80,7 @@ proxies:
     server: sg2-trojan.bonds.id
     port: 443
     type: trojan
-    password: 41c71d30-49c1-11ef-9ef1-1239d0255272
+    password: c8cf1dd0-4f34-11ef-9aac-1239d0255272
     sni: m.mobilelegends.com
     skip-cert-verify: true
 
