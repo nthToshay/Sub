@@ -46,7 +46,7 @@ proxies:
     server: 103.114.203.80
     port: 10000
     type: vmess
-    uuid: 6a584e48-5a24-11ef-8d39-e3d596b80316
+    uuid: 7325c202-5fd4-11ef-88d7-776cf31453a4
     alterId: 0
     cipher: auto
     tls: false
