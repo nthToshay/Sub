@@ -63,7 +63,7 @@ proxies:
     server: 129.154.228.4
     port: 8087
     type: vmess
-    uuid: 15bd8989-ef9d-4866-b799-05754b3c485d
+    uuid: a4d10220-b3f1-4158-89a2-83a928dcea7d
     alterId: 0
     cipher: auto
     tls: false
@@ -80,7 +80,7 @@ proxies:
     server: sg2-trojan.bonds.id
     port: 443
     type: trojan
-    password: c8cf1dd0-4f34-11ef-9aac-1239d0255272
+    password: 50818080-6061-11ef-8120-1239d0255272
     sni: m.mobilelegends.com
     skip-cert-verify: true
 
