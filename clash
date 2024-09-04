@@ -63,7 +63,7 @@ proxies:
     server: 129.154.228.4
     port: 8087
     type: vmess
-    uuid: 40db3e49-240b-457e-bfd2-0d00462f50a9
+    uuid: b6a1c7fe-25f2-4cb0-a690-96700d19d4d7
     alterId: 0
     cipher: auto
     tls: false
