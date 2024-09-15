@@ -46,7 +46,7 @@ proxies:
     server: 103.114.203.80
     port: 10000
     type: vmess
-    uuid: 376bd6f6-6f89-11ef-841c-c30b60a17f75
+    uuid: e33c0a10-7311-11ef-884b-7f74e630aaff
     alterId: 0
     cipher: auto
     tls: false
@@ -55,23 +55,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vpnjantit
-      headers:
-        Host: m.mobilelegends.com
-    udp: true
-
-  - name: SG 30D
-    server: 129.154.228.4
-    port: 8087
-    type: vmess
-    uuid: b6a1c7fe-25f2-4cb0-a690-96700d19d4d7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 
-    network: ws
-    ws-opts:
-      path: /vmess
       headers:
         Host: m.mobilelegends.com
     udp: true
@@ -92,7 +75,6 @@ proxy-groups:
       - Best Ping
       - KH
       - TH 3
-      - SG 30D
       - SG HE-02
 
   - name: Auto
@@ -102,7 +84,6 @@ proxy-groups:
     proxies:
       - KH
       - TH 3
-      - SG 30D
       - SG HE-02
 
   - name: Best Ping
@@ -112,7 +93,6 @@ proxy-groups:
     proxies:
       - KH
       - TH 3
-      - SG 30D
       - SG HE-02
 
 rules:
