@@ -54,7 +54,7 @@ proxies:
     servername: 
     network: ws
     ws-opts:
-      path: /vmess
+      path: /vmess/
       headers:
         Host: m.mobilelegends.com
     udp: true
