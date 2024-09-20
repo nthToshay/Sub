@@ -42,11 +42,11 @@ proxies:
         Host: m.mobilelegends.com
     udp: true
     
-  - name: TH 3
-    server: 103.114.203.80
-    port: 10000
+  - name: SG
+    server: ul-singapore2.09vpn.com
+    port: 80
     type: vmess
-    uuid: 79e0eac8-74dc-11ef-88d3-770c592c075d
+    uuid: b771fcaa-5d70-4016-a20b-5aeac7b56697
     alterId: 0
     cipher: auto
     tls: false
@@ -54,7 +54,7 @@ proxies:
     servername: 
     network: ws
     ws-opts:
-      path: /vpnjantit
+      path: /vmess
       headers:
         Host: m.mobilelegends.com
     udp: true
@@ -74,7 +74,7 @@ proxy-groups:
       - Auto
       - Best Ping
       - KH
-      - TH 3
+      - SG
       - SG HE-02
 
   - name: Auto
@@ -83,7 +83,7 @@ proxy-groups:
     interval: 30
     proxies:
       - KH
-      - TH 3
+      - SG
       - SG HE-02
 
   - name: Best Ping
@@ -92,7 +92,7 @@ proxy-groups:
     interval: 60
     proxies:
       - KH
-      - TH 3
+      - SG
       - SG HE-02
 
 rules:
