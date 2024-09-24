@@ -42,19 +42,18 @@ proxies:
         Host: m.mobilelegends.com
     udp: true
     
-  - name: SG
-    server: ul-singapore2.09vpn.com
-    port: 80
+  - name: SGF1
+    server: sgv-1.openv2ray.com
+    port: 443
     type: vmess
-    uuid: b771fcaa-5d70-4016-a20b-5aeac7b56697
-    alterId: 0
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    servername: 
     network: ws
     ws-opts:
-      path: /vmess/
+      path: /u/opentunnel.net-hhuhffhnof
       headers:
         Host: m.mobilelegends.com
     udp: true
@@ -74,7 +73,7 @@ proxy-groups:
       - Auto
       - Best Ping
       - KH
-      - SG
+      - SGF1
       - SG HE-02
 
   - name: Auto
@@ -83,7 +82,7 @@ proxy-groups:
     interval: 30
     proxies:
       - KH
-      - SG
+      - SGF1
       - SG HE-02
 
   - name: Best Ping
@@ -92,7 +91,7 @@ proxy-groups:
     interval: 60
     proxies:
       - KH
-      - SG
+      - SGF1
       - SG HE-02
 
 rules:
