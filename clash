@@ -58,11 +58,11 @@ proxies:
         Host: m.mobilelegends.com
     udp: true
 
-  - name: SG HE-02
-    server: sg2-trojan.bonds.id
+  - name: SG Melbi
+    server: sg-4.test3.net
     port: 443
     type: trojan
-    password: 50818080-6061-11ef-8120-1239d0255272
+    password: ce99a6a0-7a6d-11ef-a0d7-1239d0255272
     sni: m.mobilelegends.com
     skip-cert-verify: true
 
