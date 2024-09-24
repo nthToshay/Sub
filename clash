@@ -74,7 +74,7 @@ proxy-groups:
       - Best Ping
       - KH
       - SGF1
-      - SG HE-02
+      - SG Melbi
 
   - name: Auto
     type: fallback
@@ -83,7 +83,7 @@ proxy-groups:
     proxies:
       - KH
       - SGF1
-      - SG HE-02
+      - SG Melbi
 
   - name: Best Ping
     type: url-test
@@ -92,7 +92,7 @@ proxy-groups:
     proxies:
       - KH
       - SGF1
-      - SG HE-02
+      - SG Melbi
 
 rules:
 - MATCH,Servers
