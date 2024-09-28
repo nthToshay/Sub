@@ -53,7 +53,7 @@ proxies:
     skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-hhuhffhnof
+      path: /u/opentunnel.net-jfjufrbuv
       headers:
         Host: m.mobilelegends.com
     udp: true
